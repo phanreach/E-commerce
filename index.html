@@ -9,74 +9,81 @@
   <!-- Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body class="bg-light">
-  <!-- Navigation Bar -->
+<body style="background-color: #f8e1e5;">
+  <!-- Navigation Bar with improved styling -->
   <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
     <div class="container">
-      <a class="navbar-brand fw-bold" href="#"  style="color:#ffb6c1">Pich Pisey Shop</a>
+      <a class="navbar-brand fw-bold" href="index.html" style="color:#FFB6C1">Pich Pisey Shop</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active fw-medium" aria-current="page" href="#">Home</a>
+            <a class="nav-link active fw-medium" aria-current="page" href="#">
+              <i class="fas fa-home me-1"></i> Home
+            </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link fw-medium" href="#">Products</a>
+            <a class="nav-link fw-medium" href="#">
+              <i class="fas fa-spa me-1"></i> Products
+            </a>
           </li>           
           <li class="nav-item">
-            <a class="nav-link fw-medium" href="#">Orders</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link fw-medium" href="#">About Us</a>
+            <a class="nav-link fw-medium" href="#">
+              <i class="fas fa-box me-1"></i> Orders
+            </a>
           </li>
         </ul>
         <form class="d-flex">
-          <input class="form-control me-2 border-primary" type="search" placeholder="Search products..." aria-label="Search">
-          <button class="btn btn-outline-primary" type="submit">
-            <i class="fas fa-search"></i>
-          </button>
+          <div class="input-group">
+            <input class="form-control border-danger" type="search" placeholder="Search products..." aria-label="Search">
+            <button class="btn btn-danger" type="submit">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
         </form>
         <div class="ms-3 d-flex">
-          <button class="btn btn-outline-primary me-2 position-relative">
-            <i class="fas fa-heart"></i>
-            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">2</span>
-          </button>
-          <button class="btn btn-primary position-relative">
+          <button class="btn btn-danger position-relative">
             <i class="fas fa-shopping-cart"></i>
-            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">4</span>
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark">4</span>
           </button>
         </div>
       </div>
     </div>
   </nav>
 
-  <!-- Hero Banner -->
+  <!-- Hero Banner with improved spacing and card design -->
   <div class="container mt-4">
-    <div class="card border-0 rounded-3 overflow-hidden">
-      <img src="./photo/cover.png" class="img-fluid w-100" alt="Cover Image" style="height: 100%; width:100%; object-fit: cover;">
+    <div class="card border-0 rounded-4 overflow-hidden shadow">
+      <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center text-white bg-dark bg-opacity-25">
+        <h1 class="display-4 fw-bold text-center">Cosmetics & Skincares</h1>
+        <p class="lead fw-bold">Premium Cosmetics For Your Beauty</p>
+        <button class="btn btn-danger btn-lg rounded-pill px-4 mt-2">Shop Now</button>
+      </div>
+      <img src="/photo/cover.png" class="img-fluid w-100" alt="Cover Image">
     </div>
   </div>
 
-  <!-- Popular Products Section -->
+  <!-- Popular Products Section with improved card design -->
   <div class="container mt-5">
-    <h2 class="fw-bold mb-4 border-bottom pb-2" style="color:#ffb6c1">
-      <i class="fas fa-fire me-2"></i> Popular Products
-    </h2>
+    <div class="p-4 mb-4">
+      <h2 class="fw-bold mb-0 text-dark">
+        <i class="fas fa-fire me-2"></i> Popular Products
+      </h2>
+    </div>
 
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+    <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4">
       <!-- Product 1 -->
       <div class="col">
-        <div class="card h-100 shadow-sm rounded-3 position-relative">
-          <div class="badge bg-danger position-absolute top-0 end-0 m-2 py-2 px-3">-15%</div>
-          <img src="./photo/armpit-cream.jpg" alt="Armpit Cream" class="card-img-top rounded-top" style="height: 200px; object-fit: cover;">
-          <div class="card-body pb-5">
+        <div class="card h-100 shadow rounded-4 border-0 position-relative">      
+          <img src="/photo/armpit-cream.jpg" alt="Armpit Cream" class="card-img-top rounded-top-4" height="200px">
+          <div class="card-body d-flex flex-column pb-5">
             <h5 class="card-title fw-semibold">Armpit Cream</h5>
+          
             <div class="d-flex align-items-center justify-content-between mb-2">
               <div>
-                <span class="text-primary fw-bold fs-5">$7.50</span>
-                <span class="text-decoration-line-through text-muted ms-2 small">$8.99</span>
+                <span class="fw-bold fs-5 text-danger">$7.50</span>
               </div>
               <div class="text-warning">
                 <i class="fas fa-star"></i>
@@ -87,31 +94,39 @@
                 <span class="text-muted ms-1 small">(84)</span>
               </div>
             </div>
-            <p class="card-text text-muted small mb-4">Powerful whitening and odor protection formula with natural ingredients.</p>
-            <div class="position-absolute bottom-0 start-0 end-0 p-3">
+          
+            <div class="mb-2">
+              <span class="badge bg-light text-dark me-1">Whitening</span>
+              <span class="badge bg-light text-dark">Natural</span>
+            </div>
+          
+            <p class="card-text text-muted small">Powerful whitening and odor protection formula with natural ingredients.</p>
+          
+            <!-- Push buttons to the bottom -->
+            <div class="mt-auto">
               <div class="d-flex gap-2">
-                <button class="btn btn-outline-primary flex-grow-1">
+                <button class="btn btn-outline-danger flex-grow-1 rounded-pill">
                   <i class="fas fa-heart me-1"></i> Wishlist
                 </button>
-                <button class="btn btn-primary flex-grow-1">
+                <button class="btn btn-danger flex-grow-1 rounded-pill">
                   <i class="fas fa-shopping-cart me-1"></i> Add
                 </button>
               </div>
             </div>
           </div>
+          
         </div>
       </div>
 
       <!-- Product 2 -->
       <div class="col">
-        <div class="card h-100 shadow-sm rounded-3 position-relative">
-          <div class="badge bg-success position-absolute top-0 end-0 m-2 py-2 px-3">New</div>
-          <img src="./photo/bikini-cream.jpg" alt="Bikini Cream" class="card-img-top rounded-top" style="height: 200px; object-fit: cover;">
+        <div class="card h-100 shadow rounded-4 border-0 position-relative">      
+          <img src="/photo/bikini-cream.jpg" alt="Bikini Cream" class="card-img-top rounded-top-4" height="200">
           <div class="card-body pb-5">
             <h5 class="card-title fw-semibold">Bikini Cream</h5>
             <div class="d-flex align-items-center justify-content-between mb-2">
               <div>
-                <span class="text-primary fw-bold fs-5">$10.00</span>
+                <span class="text-danger fw-bold fs-5">$10.00</span>
               </div>
               <div class="text-warning">
                 <i class="fas fa-star"></i>
@@ -122,13 +137,17 @@
                 <span class="text-muted ms-1 small">(88)</span>
               </div>
             </div>
+            <div class="mb-2">
+              <span class="badge bg-light text-dark me-1">Sensitive</span>
+              <span class="badge bg-light text-dark">Moisturizing</span>
+            </div>
             <p class="card-text text-muted small mb-4">Premium whitening cream designed for sensitive bikini areas with moisturizing effects.</p>
             <div class="position-absolute bottom-0 start-0 end-0 p-3">
               <div class="d-flex gap-2">
-                <button class="btn btn-outline-primary flex-grow-1">
+                <button class="btn btn-outline-danger flex-grow-1 rounded-pill">
                   <i class="fas fa-heart me-1"></i> Wishlist
                 </button>
-                <button class="btn btn-primary flex-grow-1">
+                <button class="btn btn-danger flex-grow-1 rounded-pill">
                   <i class="fas fa-shopping-cart me-1"></i> Add
                 </button>
               </div>
@@ -139,13 +158,13 @@
 
       <!-- Product 3 -->
       <div class="col">
-        <div class="card h-100 shadow-sm rounded-3 position-relative">
-          <img src="./photo/i'm-your-scrub.jpg" alt="I'm your scrub" class="card-img-top rounded-top" style="height: 200px; object-fit: cover;">
+        <div class="card h-100 shadow rounded-4 border-0 position-relative">      
+          <img src="/photo/i'm-your-scrub.jpg" alt="I'm your scrub" class="card-img-top rounded-top-4" height="200">
           <div class="card-body pb-5">
             <h5 class="card-title fw-semibold">I'm your scrub</h5>
             <div class="d-flex align-items-center justify-content-between mb-2">
               <div>
-                <span class="text-primary fw-bold fs-5">$9.00</span>
+                <span class="text-danger fw-bold fs-5">$9.00</span>
               </div>
               <div class="text-warning">
                 <i class="fas fa-star"></i>
@@ -156,13 +175,17 @@
                 <span class="text-muted ms-1 small">(96)</span>
               </div>
             </div>
+            <div class="mb-2">
+              <span class="badge bg-light text-dark me-1">Exfoliating</span>
+              <span class="badge bg-light text-dark">Brightening</span>
+            </div>
             <p class="card-text text-muted small mb-4">Gentle exfoliating scrub that removes dead skin cells and reveals brighter skin.</p>
             <div class="position-absolute bottom-0 start-0 end-0 p-3">
               <div class="d-flex gap-2">
-                <button class="btn btn-outline-primary flex-grow-1">
+                <button class="btn btn-outline-danger flex-grow-1 rounded-pill">
                   <i class="fas fa-heart me-1"></i> Wishlist
                 </button>
-                <button class="btn btn-primary flex-grow-1">
+                <button class="btn btn-danger flex-grow-1 rounded-pill">
                   <i class="fas fa-shopping-cart me-1"></i> Add
                 </button>
               </div>
@@ -173,14 +196,13 @@
 
       <!-- Product 4 -->
       <div class="col">
-        <div class="card h-100 shadow-sm rounded-3 position-relative">
-          <div class="badge bg-warning text-dark position-absolute top-0 end-0 m-2 py-2 px-3">Best Seller</div>
-          <img src="./photo/pkha-blush.png" alt="Pkha Blush" class="card-img-top rounded-top" style="height: 200px; object-fit: cover;">
+        <div class="card h-100 shadow rounded-4 border-0 position-relative">      
+          <img src="/photo/pkha-blush.png" alt="Pkha Blush" class="card-img-top rounded-top-4" height="200">
           <div class="card-body pb-5">
             <h5 class="card-title fw-semibold">Pkha Blush</h5>
             <div class="d-flex align-items-center justify-content-between mb-2">
               <div>
-                <span class="text-primary fw-bold fs-5">$10.00</span>
+                <span class="text-danger fw-bold fs-5">$10.00</span>
               </div>
               <div class="text-warning">
                 <i class="fas fa-star"></i>
@@ -191,13 +213,17 @@
                 <span class="text-muted ms-1 small">(88)</span>
               </div>
             </div>
+            <div class="mb-2">
+              <span class="badge bg-light text-dark me-1">Long-lasting</span>
+              <span class="badge bg-light text-dark">Natural</span>
+            </div>
             <p class="card-text text-muted small mb-4">Long-lasting natural blush that gives your cheeks a healthy, radiant glow.</p>
             <div class="position-absolute bottom-0 start-0 end-0 p-3">
               <div class="d-flex gap-2">
-                <button class="btn btn-outline-primary flex-grow-1">
+                <button class="btn btn-outline-danger flex-grow-1 rounded-pill">
                   <i class="fas fa-heart me-1"></i> Wishlist
                 </button>
-                <button class="btn btn-primary flex-grow-1">
+                <button class="btn btn-danger flex-grow-1 rounded-pill">
                   <i class="fas fa-shopping-cart me-1"></i> Add
                 </button>
               </div>
@@ -208,78 +234,206 @@
     </div>
   </div>
 
-  <!-- Combo Sets Section -->
+  <!-- Combo Sets Section with improved design -->
   <div class="container mt-5 mb-5">
-    <h2 class="fw-bold mb-4 border-bottom pb-2 text-primary">
-      <i class="fas fa-box me-2"></i> Combo Sets
-    </h2>
+    <div class="p-4 mb-4">
+      <h2 class="fw-bold mb-0 text-dark">
+        <i class="fas fa-box me-2"></i> Combo Sets
+      </h2>
     </div>
+    
     <div class="row justify-content-center g-4">
+      <!-- Combo Set 1 -->
       <div class="col-md-4">
-  <div class="card border-0 shadow-lg overflow-hidden h-100">
-    <div class="position-relative">
-      <!-- Fixed height container -->
-      <div style="height: 300px;" class="overflow-hidden">
-        <img src="" class="card-img-top w-100 h-100" alt="Promotion" style="object-fit: cover;">
+        <div class="card border-0 shadow rounded-4 overflow-hidden">
+          <div class="position-relative">
+            <div style="height: 300px;" class="overflow-hidden">
+              <img src="/photo/set1.jpg" class="card-img-top w-100" alt="Promotion">
+            </div>
+          </div>
+          <div class="card-body text-center p-4">
+            <h4 class="card-title fw-bold mb-3">Summer Protection Set</h4>
+            <p class="card-text mb-4">Get ready for summer with our new collection of sunscreens and moisturizers designed for hot weather protection.</p>
+            <a href="#" class="btn btn-danger btn-lg rounded-pill px-4">
+              <i class="fas fa-tag me-2"></i>Buy Now
+            </a>
+          </div>
+          <div class="card-footer bg-transparent text-center border-0 pb-4">
+            <p class="text-danger fw-bold">
+              <i class="fas fa-clock me-1"></i>
+              Offer valid until June 30, 2024
+            </p>
+          </div>
+        </div>
       </div>
-      <div class="position-absolute top-0 start-0 bg-danger text-white py-2 px-3 m-3 rounded-pill">
-        <span class="fw-bold">30% OFF</span>
+      
+      <!-- Combo Set 2 -->
+      <div class="col-md-4">
+        <div class="card border-0 shadow rounded-4 overflow-hidden h-100">
+          <div class="position-relative">
+         
+            <div style="height: 300px;" class="overflow-hidden">
+              <img src="/photo/set2.jpg" class="card-img-top w-100" alt="Promotion">
+            </div>
+          </div>
+          <div class="card-body text-center p-4">
+            <h4 class="card-title fw-bold mb-3">Summer Protection Set</h4>
+            <p class="card-text mb-4">Get ready for summer with our new collection of sunscreens and moisturizers designed for hot weather protection.</p>
+            <a href="#" class="btn btn-danger btn-lg rounded-pill px-4">
+              <i class="fas fa-tag me-2"></i>Buy Now
+            </a>
+          </div>
+          <div class="card-footer bg-transparent text-center border-0 pb-4">
+            <p class="text-danger fw-bold">
+              <i class="fas fa-clock me-1"></i>
+              Offer valid until June 30, 2024
+            </p>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="card-body text-center p-4">
-      <h4 class="card-title fw-bold mb-3">Summer Collection</h4>
-      <p class="card-text mb-4">Get ready for summer with our new collection of sunscreens and moisturizers designed for hot weather protection.</p>
-      <a href="#" class="btn btn-primary">Buy Promotion</a>
-    </div>
-    <div class="card-footer bg-transparent text-center border-0 pb-4">
-      <p class="text-muted small">Offer valid until June 30, 2024</p>
-    </div>
-  </div>
-</div>
-<div class="col-md-4">
-  <div class="card border-0 shadow-lg overflow-hidden h-100">
-    <div class="position-relative">
-      <!-- Fixed height container -->
-      <div style="height: 300px;" class="overflow-hidden">
-        <img src="" class="card-img-top w-100 h-100" alt="Promotion" style="object-fit: cover;">
+      <div class="col-md-4">
+        <div class="card border-0 shadow rounded-4 overflow-hidden h-100">
+          <div class="position-relative">
+           
+            <div style="height: 300px;" class="overflow-hidden">
+              <img src="/photo/set3.jpg" class="card-img-top w-100" alt="Promotion">
+            </div>
+          </div>
+          <div class="card-body text-center p-4">
+            <h4 class="card-title fw-bold mb-3">Summer Protection Set</h4>
+            <p class="card-text mb-4">Get ready for summer with our new collection of sunscreens and moisturizers designed for hot weather protection.</p>
+            <a href="#" class="btn btn-danger btn-lg rounded-pill px-4">
+              <i class="fas fa-tag me-2"></i>Buy Now
+            </a>
+          </div>
+          <div class="card-footer bg-transparent text-center border-0 pb-4">
+            <p class="text-danger fw-bold">
+              <i class="fas fa-clock me-1"></i>
+              Offer valid until June 30, 2024
+            </p>
+          </div>
+        </div>
       </div>
-      <div class="position-absolute top-0 start-0 bg-primary text-white py-2 px-3 m-3 rounded-pill">
-        <span class="fw-bold">BUY 1 GET 1</span>
-      </div>
-    </div>
-    <div class="card-body text-center p-4">
-      <h4 class="card-title fw-bold mb-3">Premium Makeup Bundle</h4>
-      <p class="card-text mb-4">Purchase any premium foundation and get a matching concealer absolutely free. Perfect for creating a flawless look.</p>
-      <a href="#" class="btn btn-primary">Buy Promotion</a>
-    </div>
-    <div class="card-footer bg-transparent text-center border-0 pb-4">
-      <p class="text-muted small">While supplies last</p>
-    </div>
-  </div>
-</div>
-<div class="col-md-4">
-  <div class="card border-0 shadow-lg overflow-hidden h-100">
-    <div class="position-relative">
-      <!-- Fixed height container -->
-      <div style="height: 300px;" class="overflow-hidden">
-        <img src="" class="card-img-top w-100 h-100" alt="Promotion" style="object-fit: cover;">
-      </div>
-      <div class="position-absolute top-0 start-0 bg-primary text-white py-2 px-3 m-3 rounded-pill">
-        <span class="fw-bold">BUY 1 GET 1</span>
-      </div>
-    </div>
-    <div class="card-body text-center p-4">
-      <h4 class="card-title fw-bold mb-3">Valentine's Day Set</h4>
-      <p class="card-text mb-4">Purchase this perfect valentine's day set as a meaningful gift to your couple.
-        Enjoy your special days.
-      </p>
-      <a href="#" class="btn btn-primary">Buy Promotion</a>
-    </div>
-    <div class="card-footer bg-transparent text-center border-0 pb-4">
-      <p class="text-muted small">While supplies last</p>
-    </div>
-  </div>
-</div>
-
-</div>
-  </div>
+      
+      <footer class="bg-white text-dark py-5 shadow-sm mt-5">
+        <div class="container">
+          <!-- Main Footer Content -->
+          <div class="row g-4">
+            <!-- Company Info -->
+            <div class="col-lg-4 col-md-6">
+              <div class="d-flex align-items-center mb-3">
+                <h4 class="fw-bold mb-0 text-dark">PichPiseyShop</h4>
+              </div>
+              <p class="mb-4">
+                We provide the best service and products to all dear customers. Our commitment is to bring beauty and confidence to everyone through high-quality beauty products.
+              </p>
+              <div class="d-flex align-items-center mb-2">
+                <div class="bg-light rounded-circle p-2 me-2">
+                  <i class="fas fa-map-marker-alt text-dark"></i>
+                </div>
+                <p class="mb-0">Phnom Penh, Cambodia</p>
+              </div>
+              <div class="d-flex align-items-center mb-2">
+                <div class="bg-light rounded-circle p-2 me-2">
+                  <i class="fas fa-envelope text-dark"></i>
+                </div>
+                <p class="mb-0">contact@pichpiseyshop.com</p>
+              </div>
+              <div class="d-flex align-items-center">
+                <div class="bg-light rounded-circle p-2 me-2">
+                  <i class="fas fa-phone text-dark"></i>
+                </div>
+                <p class="mb-0">(+855) 89 723 701</p>
+              </div>
+            </div>
+      
+            <!-- Quick Links -->
+            <div class="col-lg-2 col-md-3 col-6">
+              <h5 class="fw-bold mb-3 text-dark">Quick Links</h5>
+              <ul class="list-unstyled">
+                <li class="mb-2">
+                  <a href="#" class="text-dark text-decoration-none d-flex align-items-center">
+                    <i class="fas fa-chevron-right text-dark me-2 small"></i>
+                    <span>Home</span>
+                  </a>
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="text-dark text-decoration-none d-flex align-items-center">
+                    <i class="fas fa-chevron-right text-dark me-2 small"></i>
+                    <span>Products</span>
+                  </a>
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="text-dark text-decoration-none d-flex align-items-center">
+                    <i class="fas fa-chevron-right text-dark me-2 small"></i>
+                    <span>Contact</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+      
+            <!-- Follow Us Links -->
+            <div class="col-lg-3 col-md-3 col-6">
+              <h5 class="fw-bold mb-3 text-dark">Follow Us</h5>
+              <p class="mb-3">Stay connected with us on social media for the latest updates and beauty tips.</p>
+              <div class="d-flex gap-2">
+                <a href="https://www.facebook.com/pichpiseycosmetic" class="btn btn-outline-primary rounded-circle d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/pichpisey_skincare/" class="btn btn-outline-danger rounded-circle d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://t.me/Sarahpich_333" class="btn btn-outline-info rounded-circle d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
+                  <i class="fab fa-telegram"></i>
+                </a>
+                <a href="https://www.tiktok.com/@pichpisey.skincare?lang=en" class="btn btn-outline-dark rounded-circle d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
+                  <i class="fab fa-tiktok"></i>
+                </a>
+              </div>
+            </div>
+      
+            <!-- We Accept Section -->
+            <div class="col-lg-3 col-md-6">
+              <h5 class="fw-bold mb-3 text-dark" style="margin-left:10px">We Accept</h5>
+              <div class="p-2">
+                <div class="row g-3">
+                  <div class="col-lg-3">
+                    <div class="d-flex align-items-center justify-content-center" style="height: 60px;">
+                      <img src="/photo/visamaster.png" alt="Visa" class="img-fluid" style="max-height: 40px;">
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="d-flex align-items-center justify-content-center" style="height: 60px;">
+                      <img src="/photo/aba.jpg" alt="ABA Bank" class="img-fluid" style="max-height: 40px;">
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="d-flex align-items-center justify-content-center" style="height: 60px;">
+                      <img src="/photo/acleda.png" alt="Aceleda Bank" class="img-fluid" style="max-height: 40px;">
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="d-flex align-items-center justify-content-center" style="height: 60px;">
+                      <img src="/photo/khqr" alt="Mastercard" class="img-fluid" style="max-height: 40px;">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <hr class="my-4">
+  
+          <div class="row align-items-center">
+            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+              <p class="mb-0">© 2025 Copyright <a href="#" class="text-dark fw-bold text-decoration-none">PichPiseyShop.com</a></p>
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+              <a href="#" class="text-dark text-decoration-none me-3">Privacy Policy</a>
+              <a href="#" class="text-dark text-decoration-none me-3">Terms of Use</a>
+              <a href="#" class="text-dark text-decoration-none">Cookie Policy</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </body>
