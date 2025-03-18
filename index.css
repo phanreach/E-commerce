@@ -1,3 +1,148 @@
 body{
   background-color: #f8e1e5;
 }
+/* Custom Light Pink Scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f9f9f9;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ffccd5;
+  border-radius: 10px;
+  border: 3px solid #f9f9f9;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ffb6c1;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #ffccd5 #f9f9f9;
+}
+
+body {
+  -ms-overflow-style: none;
+}
+
+body::-ms-scrollbar-thumb {
+  background: #ffccd5;
+  border-radius: 10px;
+}
+
+body::-ms-scrollbar-track {
+  background: #f9f9f9;
+  border-radius: 10px;
+}
+.testimonial-carousel-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.carousel-inner {
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.carousel-content {
+  min-height: 300px;
+  padding: 20px;
+}
+
+.carousel-image {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .carousel-image {
+    width: 40%;
+    max-width: 350px;
+    margin-bottom: 0;
+    margin-right: 30px;
+  }
+  
+  .carousel-caption-custom {
+    width: 60%;
+  }
+}
+
+.carousel-caption-custom {
+  position: relative;
+  color: #333;
+  text-align: left;
+}
+
+/* Custom Indicators */
+.custom-indicators {
+  bottom: -40px;
+}
+
+.custom-indicators button {
+  width: 12px;
+  height: 12px;
+  background-color: #ddd;
+  opacity: 0.5;
+  margin: 0 5px;
+  border: none;
+}
+
+.custom-indicators button.active {
+  background-color: #ffb6c1;
+  opacity: 1;
+}
+
+/* Custom Controls */
+.custom-control {
+  width: auto;
+  opacity: 1;
+}
+
+.carousel-control-icon {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 182, 193, 0.8);
+  color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.carousel-control-icon:hover {
+  background-color: rgba(255, 182, 193, 1);
+  transform: scale(1.05);
+}
+
+.text-pink {
+  color: #ffb6c1;
+}
+
+.bg-pink {
+  background-color: rgba(255, 182, 193, 0.8);
+}
+
+/* Quote styling */
+.quote-mark {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  opacity: 0.7;
+}
+
+/* Animation */
+.carousel-fade .carousel-item {
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+}
+
+.carousel-fade .carousel-item.active {
+  opacity: 1;
+}
